@@ -14,3 +14,11 @@ fi
     echo "Utworzono $count plików logx.txt"
     ;;
 
+ --error|-e)
+    count=${2:-100}
+    mkdir -p errorx
+    for i in $(seq 1 "$count"); do
+      echo "Plik: error$i.txt | Skrypt: $0 | Data: $(date)" > "errorx/error$i.txt"
+    done
+    echo "Utworzono $count plików errorx/errorx.txt"
+    ;;
