@@ -24,7 +24,7 @@ fi
     ;;
 
   --init)
-    REPO_URL="https://github.com/TWOJ_LOGIN/nazwa-repo.git"
+    REPO_URL="https://github.com/Kamil850/Lab4.git"
     DEST="klon"
     git clone "$REPO_URL" "$DEST"
     export PATH="$PATH:$(pwd)/$DEST"
