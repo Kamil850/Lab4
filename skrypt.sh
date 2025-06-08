@@ -22,3 +22,11 @@ fi
     done
     echo "Utworzono $count plików errorx/errorx.txt"
     ;;
+
+  --init)
+    REPO_URL="https://github.com/TWOJ_LOGIN/nazwa-repo.git"
+    DEST="klon"
+    git clone "$REPO_URL" "$DEST"
+    export PATH="$PATH:$(pwd)/$DEST"
+    echo "Repozytorium sklonowane do $DEST i dodane do PATH"
+    ;;
