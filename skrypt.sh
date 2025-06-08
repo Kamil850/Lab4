@@ -39,3 +39,9 @@ fi
     echo "--init             : klonuje repozytorium i dodaje ścieżkę do PATH"
     echo "--help / -h        : pokazuje tę wiadomość"
     ;;
+
+  *)
+    echo "Nieznana opcja: $1"
+    echo "Użyj --help lub -h, aby zobaczyć dostępne opcje."
+    ;;
+esac
