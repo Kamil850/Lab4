@@ -30,3 +30,12 @@ fi
     export PATH="$PATH:$(pwd)/$DEST"
     echo "Repozytorium sklonowane do $DEST i dodane do PATH"
     ;;
+
+  --help|-h)
+    echo "Dostępne opcje:"
+    echo "--date / -d        : wyświetla datę"
+    echo "--logs [n] / -l [n]: tworzy n plików logx.txt (domyślnie 100)"
+    echo "--error [n] / -e [n]: tworzy n plików errorx/errorx.txt (domyślnie 100)"
+    echo "--init             : klonuje repozytorium i dodaje ścieżkę do PATH"
+    echo "--help / -h        : pokazuje tę wiadomość"
+    ;;
