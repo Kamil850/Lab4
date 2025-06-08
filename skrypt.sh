@@ -2,9 +2,10 @@
 
 
 case "$1" in
-if [[ "$1" == "--date" || "$1" == "-d" ]]; then
-  date
-fi
+  --date|-d)
+    date
+    ;;
+
 
   --logs|-l)
     count=${2:-100}
